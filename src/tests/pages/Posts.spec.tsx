@@ -52,14 +52,6 @@ describe("Posts page", () => {
 			}),
 		} as any);
 
-		console.log(
-			new Date("28-12-2021").toLocaleDateString("pt-BR", {
-				day: "2-digit",
-				month: "long",
-				year: "numeric",
-			})
-		);
-
 		const response = await getStaticProps({});
 
 		expect(response).toEqual(
